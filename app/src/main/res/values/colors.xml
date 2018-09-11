@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#1e5799</color>
+    <color name="colorPrimaryDark">#074284</color><!-- duplicate-->
+    <color name="primary_light">#B3E5FC</color>
+    <color name="colorAccent">#1e5799</color><!-- duplicate-->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#6c757d</color>
+    <color name="medium_text">#6c757d</color><!-- duplicate-->
+    <color name="light_gray">#dbdbdb</color>
+    <color name="ghost_gray">#e6e6e7</color>
+    <color name="background_second">#e5e5e5</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="dark_gray">#696969</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_background">#f2f3f5</color>
+    <color name="dusk_yellow">#F8D305</color>
+    <color name="green">#28a745</color>
+    <color name="light_green">#28a745</color><!-- duplicate-->
+    <color name="link">#185be2</color>
+    <color name="dates">#65747c</color>
+    <color name="active_link_color">#F5434B</color>
+    <color name="ghost_white">#F8F8F9</color>
+    <color name="white_for_toolbar">#e4e4e6</color>
+    <color name="color3">#555e73</color>
+    <color name="semi_transparent_white">#D9FFFFFF</color>
+    <color name="colorBackground">#eaeff3</color>
+    <!--Design colors-->
+    <color name="primary_text_color">#434c5c</color>
+    <color name="secondary_text_color">#686f80</color>
+
+    <color name="red_dark">#F06423</color>
+    <color name="orange">#FFA500</color>
+    <color name="light_blue">#2568ce</color>
+    <color name="circle_image_background">#DEE0E5</color>
+
+    <color name="colorPrimaryLight">#b4b4b4</color>
+
+
+    <color name="black_transparent_70percent">#99000000</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <!-- Review color-->
+
+    <color name="miles">#F34C5D</color>
+
+    <color name="sucess_green">#28a745</color><!-- duplicate-->
+    <color name="colorDisabledGray">#cdcdcd</color>
+
+    <color name="progress_end_color">#E9ECEF</color>
+    <color name="border_line">#dee2e6</color>
+    <color name="card_selector_color">#c6e1ff</color>
 </resources>

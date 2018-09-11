@@ -1,11 +1,275 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
         <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorControlNormal">@color/border_line</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- Toolbar theme. -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:popupMenuStyle">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+
+    <!--Alert Dialog theme. -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Text style-->
+
+    <style name="TextStyle">
+        <item name="android:textColor">@color/black_effective</item>
+    </style>
+
+    <style name="TextStyle.Title.Sub" parent="TextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+    <!--13sp-->
+    <style name="TextStyle.Data" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextStyle.Heading" parent="TextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <style name="TextStyle.Detail.Heading" parent="TextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <style name="Toolbar.Header" parent="TextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <style name="Toolbar.Secondary" parent="TextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+
+
+    <style name="TextStyle.HeadersLarge" parent="TextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <style name="TextStyle.HeadersMed" parent="TextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+
+    </style>
+
+    <style name="TextStyle.HeadersSmall" parent="TextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <style name="TextStyle.Detail.Headers" parent="TextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+
+    <style name="TextStyle.Detail.HeadersSmall" parent="TextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <!--For Desc Styles-->
+
+    <style name="TextStyle.DescSmall" parent="TextStyle">
+        <item name="android:textColor">@color/medium_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+
+    <style name="TextStyle.DescMed" parent="TextStyle">
+        <item name="android:textColor">@color/medium_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+
+    <style name="TextStyle.DescSmallD" parent="TextStyle">
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <!--For Link Styles-->
+
+    <style name="TextStyle.LinkSmall" parent="TextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+
+    <!--Rating bar theme style to golen and light grey-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/dusk_yellow</item>
+    </style>
+
+    <style name="RatingBarForBlackBackground" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/red_dark</item>
+        <item name="colorControlActivated">@color/dusk_yellow</item>
+    </style>
+
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">18dip</item>
+    </style>
+
+
+    <!-- -->
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/rounded_corner_black</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_5dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10dp</item>
+        <item name="android:padding">@dimen/dimen_5dp</item>
+        <item name="android:fontFamily">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="amu_Bubble.TextAppearance.Light" parent="amu_Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+
+    <style name="amu_Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--New Generic styles for entire project-->
+
+    <style name="TextAppearance.Text.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="TextAppearance.Text.Bold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Text.ExtraBold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="TextAppearance.Text.Light" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <!--TextView parent style-->
+    <style name="TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView.Header">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.SubHeader">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextView.SubTitle">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Light">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Light</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!--Green PlaceHolder style-->
+    <style name="TextView.PlaceHolderGreen">
+        <item name="android:background">@drawable/rounded_corner_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dimen_2dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_3dp</item>
+        <item name="android:paddingRight">@dimen/dimen_3dp</item>
+        <item name="android:paddingTop">@dimen/dimen_2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+
+    <!--Progress layout TextView style-->
+    <style name="ProgressLayoutTextView" parent="TextView.Regular">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!-- Custom Spinner -->
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textAppearance">@style/TextView.Regular</item>
+        <item name="android:minHeight">45dp</item>
     </style>
 
 </resources>

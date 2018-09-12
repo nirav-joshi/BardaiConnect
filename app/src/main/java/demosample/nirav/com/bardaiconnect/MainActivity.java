@@ -23,6 +23,6 @@ public class MainActivity extends AbstractBaseActivity {
 
     @Override
     protected int getContentView() {
-        return R.layout.activity_main;
+        return R.layout.newlandhome;
     }
 }

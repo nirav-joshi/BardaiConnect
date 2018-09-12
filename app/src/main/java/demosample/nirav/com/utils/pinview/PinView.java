@@ -26,7 +26,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.EditorInfo;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 
 
 /**

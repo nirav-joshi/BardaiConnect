@@ -27,7 +27,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 
 
 public class CircleImageView extends AppCompatImageView {

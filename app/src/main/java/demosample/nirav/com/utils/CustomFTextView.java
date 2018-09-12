@@ -8,7 +8,7 @@ import android.support.v7.content.res.AppCompatResources;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 
 
 /**

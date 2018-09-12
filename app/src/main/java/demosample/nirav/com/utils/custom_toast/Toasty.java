@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 
 
 public class Toasty {

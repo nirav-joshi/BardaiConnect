@@ -35,9 +35,10 @@ import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import demosample.nirav.com.R;
 import demosample.nirav.com.application.BardaiConnectApplication;
-import demosample.nirav.com.bardaiconnect.R;
 import demosample.nirav.com.di.component.ActivityComponent;
+import demosample.nirav.com.di.component.DaggerActivityComponent;
 import demosample.nirav.com.di.module.ActivityModule;
 import demosample.nirav.com.utils.NetworkUtils;
 import demosample.nirav.com.utils.custom_toast.Toasty;

@@ -19,7 +19,7 @@ import javax.inject.Inject;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ActivityComponent;
 import demosample.nirav.com.utils.custom_toast.Toasty;

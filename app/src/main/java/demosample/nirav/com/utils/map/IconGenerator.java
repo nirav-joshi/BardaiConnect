@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 
 
 public class IconGenerator {

@@ -1,13 +1,28 @@
 package demosample.nirav.com.bardaiconnect;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import demosample.nirav.com.R;
+import demosample.nirav.com.base.AbstractBaseActivity;
+import demosample.nirav.com.di.component.ActivityComponent;
+
+public class MainActivity extends AbstractBaseActivity {
+
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onViewReady(Bundle savedInstanceState, Intent intent) {
+        super.onViewReady(savedInstanceState, intent);
+
+        ActivityComponent component = getActivityComponent();
+        if (component != null) {
+            component.inject(this);
+        }
+    }
+
+    @Override
+    protected int getContentView() {
+        return R.layout.activity_main;
     }
 }

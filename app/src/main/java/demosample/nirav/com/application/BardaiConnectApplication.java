@@ -10,6 +10,7 @@ import javax.inject.Inject;
 
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ApplicationComponent;
+import demosample.nirav.com.di.component.DaggerApplicationComponent;
 import demosample.nirav.com.di.module.ApplicationModule;
 
 

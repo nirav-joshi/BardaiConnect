@@ -24,7 +24,7 @@ import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
-import demosample.nirav.com.bardaiconnect.R;
+import demosample.nirav.com.R;
 import demosample.nirav.com.utils.ViewUtils;
 
 

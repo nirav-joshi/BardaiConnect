@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/connections">
+        <menu>
+    <group android:checkableBehavior="single"
+        android:id="@+id/lifeplan_content">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_home1"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home1" />
+
+
+        <item
+            android:id="@+id/nav_home2"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home2" />
+
+
+        <item
+            android:id="@+id/nav_home3"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home3" />
+
+
+    </group>
+        </menu>
+    </item>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_eva_rewards">
+
+        <item
+            android:id="@+id/nav_other"
+            android:icon="@drawable/ic_appointment"
+            android:title="@string/other"/>
+
+        <item
+            android:id="@+id/nav_other1"
+            android:icon="@drawable/ic_appointment"
+            android:title="@string/other1"/>
+
+        <item
+            android:id="@+id/nav_other2"
+            android:icon="@drawable/ic_appointment"
+            android:title="@string/other2"/>
+        <item
+            android:id="@+id/nav_other3"
+            android:icon="@drawable/ic_appointment"
+            android:title="@string/other3"/>
+    </group>
+
+
+
+
+</menu>

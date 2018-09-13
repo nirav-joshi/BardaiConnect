@@ -6,7 +6,6 @@
     android:layout_height="80dp"
     android:clickable="true"
     android:focusable="true"
-    app:cardCornerRadius="0dp"
     android:foreground="@drawable/ripple_background_business_white"
     app:cardElevation="0dp">
 
@@ -16,35 +15,37 @@
         android:background="@color/colorPrimary">
 
 
-        <android.support.v7.widget.AppCompatImageView
+        <demosample.nirav.com.utils.CircleImageView
             android:id="@+id/img_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_name"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_basic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dsdsd"
             tools:ignore="VectorDrawableCompat" />
 
-
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/textView"
             style="@style/TextAppearance.Text.Bold"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="8dp"
             android:gravity="center"
-            android:text="Basic"
+            android:text="67%"
             android:textColor="@color/white"
             android:textSize="12sp"
-            android:tooltipText="Notification"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/img_icon" />
+
 
     </android.support.constraint.ConstraintLayout>
 

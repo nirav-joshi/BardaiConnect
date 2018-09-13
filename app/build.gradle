@@ -8,6 +8,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -37,8 +38,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //butterknife
+//butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
-
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //constraint layout
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 

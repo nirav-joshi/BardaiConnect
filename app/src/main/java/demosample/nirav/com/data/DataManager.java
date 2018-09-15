@@ -30,13 +30,7 @@ public class DataManager {
         return mSharedPrefsHelper.get(SharedPrefsHelper.PREF_KEY_ACCESS_TOKEN, null);
     }
 
-    public String getSearchedLocation() {
-        return mSharedPrefsHelper.get(SharedPrefsHelper.CACHED_LOCATION, null);
-    }
 
-    public void updateCacheLocation(String json) {
-         mSharedPrefsHelper.put(SharedPrefsHelper.CACHED_LOCATION, json);
-    }
 
     public void setWelcomeScreen() {
         mSharedPrefsHelper.put(SharedPrefsHelper.IS_FIRST_TIME, false);
@@ -57,17 +51,7 @@ public class DataManager {
             mSharedPrefsHelper.writeToSharedPreferences(SharedPrefsHelper.LATITUDE, latitude);
     }
 
-    public String getLocationName() {
-        return mSharedPrefsHelper.get(SharedPrefsHelper.LOCATION_NAME, "");
-    }
 
-    public double getLatitude() {
-        return mSharedPrefsHelper.readDoubleFromSharedPreferences(SharedPrefsHelper.LATITUDE);
-    }
-
-    public double getLongitude() {
-        return mSharedPrefsHelper.readDoubleFromSharedPreferences(SharedPrefsHelper.LONGITUDE);
-    }
 
     public String getLoginObject() {
         return mSharedPrefsHelper.get(SharedPrefsHelper.OBJECT_JSON, "");
@@ -77,19 +61,5 @@ public class DataManager {
         mSharedPrefsHelper.put(SharedPrefsHelper.OBJECT_JSON, objectJson);
     }
 
-/*    public boolean getFirstTimeInfoShort() {
-        return mSharedPrefsHelper.get(SharedPrefsHelper.SHORT_INFO,false);
-    }
 
-    public void setFirstTimeInfoShort() {
-        mSharedPrefsHelper.put(SharedPrefsHelper.SHORT_INFO, true);
-    }
-
-    public boolean getFirstTimeInfoNinety() {
-        return mSharedPrefsHelper.get(SharedPrefsHelper.NINETY_INFO,false);
-    }
-
-    public void setFirstTimeInfoNinety() {
-        mSharedPrefsHelper.put(SharedPrefsHelper.NINETY_INFO, true);
-    }*/
 }

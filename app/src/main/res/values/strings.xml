@@ -15,4 +15,44 @@
     <string name="other1">Other1</string>
     <string name="other2">Other2</string>
     <string name="other3">Other3</string>
+
+    <!--Login-->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="Password">Password</string>
+    <string name="dob">Birth Date</string>
+    <string name="parentemail">Parent Email</string>
+    <string name="Forgot_your_password">Forgot Password?</string>
+    <string name="check_email_for_otp">Check your email for OTP verification.</string>
+    <string name="forgot_password_text">Enter your email below to receive your password reset instructions.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="Register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password_required">Password is required!</string>
+    <string name="password_length_validation_message">Your password must be at least six characters long!</string>
+    <string name="parentemailrequired">Parent Email Required!</string>
+    <string name="dobrequired">Birthdate Required!</string>
+    <string name="valid_email_required">Valid Email is required!</string>
+    <string name="last_name_required">Last Name is required!</string>
+    <string name="first_name_required">First Name is required!</string>
+    <string name="we_have_sent_an_email_with_a_otp_code_to_your_registered_email_for_verification">We have sent an Email with an OTP code to your registered Email for Verification</string>
+    <string name="verify">Verify</string>
+    <string name="send">Send</string>
+    <string name="resend">Resend OTP !</string>
+
+    <string name="pleasewait">Please Wait</string>
+    <string name="loading">Loading</string>
+    <!-- Delete confirmation Dialog  -->
+    <string name="delete_confm"><b>%s</b> will be permanently deleted?</string>
+    <string name="current_password">Current password</string>
+    <string name="Log_in">Log in</string>
+    <string name="New_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="txt_continue">Continue</string>
+
+    <!-- Change password activity -->
+    <string name="contn">Continue</string>
+    <string name="change_password">Change password</string>
+    <string name="log_out">Log out</string>
 </resources>

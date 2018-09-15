@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bgIV"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/login_icon"
+            app:layout_collapseMode="parallax"
+            app:layout_constraintBottom_toBottomOf="@id/view_background"
+            app:layout_constraintEnd_toEndOf="@id/view_background"
+            app:layout_constraintStart_toStartOf="@id/view_background"
+            app:layout_constraintTop_toTopOf="@id/view_background" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:minHeight="?android:attr/actionBarSize"
+            android:theme="@style/ToolBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen_15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_background">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/login_email_wrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:hint="@string/email"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_mail"
+                    style="@style/TextView.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/login_registration_password"
+                    android:nextFocusForward="@+id/login_registration_password"
+                    android:nextFocusRight="@+id/login_registration_password"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/login_email_password_wrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="@string/Password"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/login_email_wrapper"
+                app:layout_constraintStart_toStartOf="@+id/login_email_wrapper"
+                app:layout_constraintTop_toBottomOf="@+id/login_email_wrapper"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_password"
+                    style="@style/TextView.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeActionId="124"
+                    android:imeActionLabel="@string/login"
+                    android:imeOptions="actionSend"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color" />
+            </android.support.design.widget.TextInputLayout>
+
+            <demosample.nirav.com.utils.custom_button.ButtonWithProgressBar
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/button_primary_action_ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/login_email_wrapper"
+                app:layout_constraintStart_toStartOf="@+id/login_email_wrapper"
+                app:layout_constraintTop_toBottomOf="@+id/login_email_password_wrapper" />
+
+            <TextView
+                android:id="@+id/txt_forgot_password"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.Text.Light"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Forgot_your_password"
+                android:textAllCaps="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/login_email_wrapper"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+            <TextView
+                android:id="@+id/txt_register"
+                style="@style/TextAppearance.Text.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Register"
+                android:textAllCaps="true"
+                android:textColor="@color/link"
+                android:textSize="13sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/txt_forgot_password"
+                app:layout_constraintEnd_toEndOf="@id/login_email_wrapper" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

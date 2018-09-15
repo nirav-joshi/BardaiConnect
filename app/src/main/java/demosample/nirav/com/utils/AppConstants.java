@@ -36,7 +36,9 @@ public class AppConstants {
 
 
 
-
+    public static final String EMAIL = "Email";
+    public static final String ADDRESS = "Address";
+    public static final String OTP = "OTP";
     //home page slider
     public static final String HOME_SLIDER_POOJA = "pooja";
     public static final String HOME_SLIDER_BUSINESS = "business";

@@ -20,6 +20,12 @@ import dagger.Component;
 import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.di.PerActivity;
 import demosample.nirav.com.di.module.ActivityModule;
+import demosample.nirav.com.login.ChangePasswordActivity;
+import demosample.nirav.com.login.ForgotPasswordActivity;
+import demosample.nirav.com.login.LoginActivity;
+import demosample.nirav.com.login.OtpActivity;
+import demosample.nirav.com.login.ResetPasswordActivity;
+import demosample.nirav.com.welcome_screen.OnBoardingActivity;
 
 /**
  * Created by janisharali on 27/01/17.
@@ -31,6 +37,13 @@ public interface ActivityComponent {
 
 
     void inject(MainActivity mainActivity);
+    void inject(ForgotPasswordActivity mainActivity);
+    void inject(ResetPasswordActivity mainActivity);
+    void inject(ChangePasswordActivity mainActivity);
+    void inject(OtpActivity mainActivity);
+    void inject(OnBoardingActivity mainActivity);
+    void inject(LoginActivity mainActivity);
+
 
 
 }

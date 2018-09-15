@@ -24,6 +24,9 @@ import com.google.gson.Gson;
 import dagger.Module;
 import dagger.Provides;
 import demosample.nirav.com.di.ActivityContext;
+import demosample.nirav.com.login.ILoginPresenter;
+import demosample.nirav.com.login.ILoginView;
+import demosample.nirav.com.login.LoginPresenter;
 import io.reactivex.disposables.CompositeDisposable;
 
 
@@ -63,6 +66,10 @@ public class ActivityModule {
         return new LinearLayoutManager(activity);
     }
 
-
+    @Provides
+    ILoginPresenter<ILoginView> provideLoginMvpPresenter(
+            LoginPresenter<ILoginView> presenter) {
+        return presenter;
+    }
 
 }

@@ -33,8 +33,13 @@ import demosample.nirav.com.R;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ActivityComponent;
+import demosample.nirav.com.login.LoginActivity;
+import demosample.nirav.com.login.LoginInfoDto;
 import demosample.nirav.com.utils.AppUtility;
 import demosample.nirav.com.utils.FragmentChangeListener;
+import demosample.nirav.com.welcome_screen.OnBoardingActivity;
+
+import static demosample.nirav.com.utils.AppUtility.isEmptyString;
 
 public class MainActivity extends AbstractBaseActivity implements
         FragmentChangeListener, NavigationView
@@ -142,8 +147,8 @@ public class MainActivity extends AbstractBaseActivity implements
 
     private void setObjectFromPref() {
         String objectJson = dataManager.getLoginObject();
-      //  if (!isEmptyString(objectJson))
-         //   OnBoardingActivity.loginInfoDto = gson.fromJson(objectJson, LoginInfoDto.class);
+        if (!isEmptyString(objectJson))
+         OnBoardingActivity.loginInfoDto = gson.fromJson(objectJson, LoginInfoDto.class);
     }
 
     /**
@@ -160,7 +165,11 @@ public class MainActivity extends AbstractBaseActivity implements
         switch (id) {
             case R.id.nav_home:
                 return HomeFragment.newInstance();
-
+            case R.id.nav_home1:
+                startActivity(new Intent(MainActivity.this,
+                        LoginActivity.class));
+                finish();
+                return  null;
 
 
             default:
@@ -289,6 +298,9 @@ public class MainActivity extends AbstractBaseActivity implements
 
     public void navHeaderClick(View view) {
         drawer.closeDrawer(GravityCompat.START);
+        if (OnBoardingActivity.loginInfoDto == null)
+            startActivity(new Intent(MainActivity.this,
+                    LoginActivity.class));
 /*
         new Handler().postDelayed(() -> {
             if (OnBoardingActivity.loginInfoDto == null)

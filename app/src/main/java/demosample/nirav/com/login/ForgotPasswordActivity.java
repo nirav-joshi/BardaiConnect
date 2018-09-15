@@ -14,7 +14,7 @@ import butterknife.OnClick;
 import demosample.nirav.com.R;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.di.component.ActivityComponent;
-import demosample.nirav.com.utils.AppConstants;
+import demosample.nirav.com.utils.IntentParameter;
 
 import static demosample.nirav.com.utils.AppUtility.isEmptyString;
 import static demosample.nirav.com.utils.AppUtility.isValidEmail;
@@ -49,8 +49,8 @@ public class ForgotPasswordActivity extends AbstractBaseActivity implements ILog
             component.inject(this);
         }
         Bundle bundle = getIntent().getExtras();
-        if (bundle != null && bundle.containsKey(AppConstants.SELECTED_VALUE)) {
-            isForResult = bundle.getBoolean(AppConstants.SELECTED_VALUE);
+        if (bundle != null && bundle.containsKey(IntentParameter.SELECTED_VALUE)) {
+            isForResult = bundle.getBoolean(IntentParameter.SELECTED_VALUE);
         }
         mPresenter.onAttach(this);
     }
@@ -101,8 +101,9 @@ public class ForgotPasswordActivity extends AbstractBaseActivity implements ILog
     @Override
     public void forgetLinkSentSucess() {
         informationToast(getString(R.string.check_email_for_otp));
-        startActivity(new Intent(this, OtpActivity.class).putExtra(AppConstants.EMAIL, edtMail.getText().toString().trim())
-                .putExtra(AppConstants.SELECTED_VALUE, isForResult));
+        startActivity(new Intent(this, OtpActivity.class).putExtra(IntentParameter.EMAIL, edtMail.getText()
+                .toString().trim())
+                .putExtra(IntentParameter.SELECTED_VALUE, isForResult));
         finish();
     }
 

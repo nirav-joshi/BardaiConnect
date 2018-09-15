@@ -13,7 +13,7 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField "String", "SERVER_URL", '"http://192.168.1.5/LCAPI/API/"'
+            buildConfigField "String", "SERVER_URL", '"https://jainconnection.universal-software.in/JainConnectionApi/API/"'
         }
         release {
             buildConfigField "String", "SERVER_URL", '"http://192.168.1.5/LCAPI/API/"'

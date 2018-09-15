@@ -18,7 +18,7 @@ import demosample.nirav.com.R;
 import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.di.component.ActivityComponent;
-import demosample.nirav.com.utils.AppConstants;
+import demosample.nirav.com.utils.IntentParameter;
 
 import static demosample.nirav.com.utils.AppUtility.isEmptyString;
 
@@ -57,13 +57,13 @@ public class ResetPasswordActivity extends AbstractBaseActivity implements ILogi
             component.inject(this);
         }
         Bundle bundle = getIntent().getExtras();
-        if (bundle != null && bundle.containsKey(AppConstants.EMAIL)) {
+        if (bundle != null && bundle.containsKey(IntentParameter.EMAIL)) {
             loginInfoDto = new LoginInfoDto();
-            loginInfoDto.setEmail(bundle.getString(AppConstants.EMAIL));
-            loginInfoDto.setOTP((bundle.getString(AppConstants.OTP)));
+            loginInfoDto.setEmail(bundle.getString(IntentParameter.EMAIL));
+            loginInfoDto.setOTP((bundle.getString(IntentParameter.OTP)));
         }
-        if (bundle != null && bundle.containsKey(AppConstants.SELECTED_VALUE)) {
-            isForResult = bundle.getBoolean(AppConstants.SELECTED_VALUE);
+        if (bundle != null && bundle.containsKey(IntentParameter.SELECTED_VALUE)) {
+            isForResult = bundle.getBoolean(IntentParameter.SELECTED_VALUE);
         }
         mPresenter.onAttach(this);
     }

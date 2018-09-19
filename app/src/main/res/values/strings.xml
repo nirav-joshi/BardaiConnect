@@ -55,4 +55,22 @@
     <string name="contn">Continue</string>
     <string name="change_password">Change password</string>
     <string name="log_out">Log out</string>
+
+    <string name="country">Country *</string>
+    <string name="state">State *</string>
+    <string name="city">City *</string>
+
+    <!--dialog string-->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_edit">EDIT</string>
+
+    <string name="search_here">Search Here</string>
+    <string name="select_city">Select City</string>
+    <string name="selectCountry">Select Country</string>
+    <string name="selectState">Select State</string>
+    <string name="selectCity">Select City</string>
+
+    <string name="personaldetail">Personal Details</string>
+    <string name="careerdetail">Career Details</string>
+    <string name="quation">You won\'t be allowed to edit the following fields after registration.\nPlease edit NOW in case you want to make any changes to:</string>
 </resources>

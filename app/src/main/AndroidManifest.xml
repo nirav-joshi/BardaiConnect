@@ -30,6 +30,12 @@
         <activity android:name=".login.ForgotPasswordActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".login.OtpActivity" />
+        <activity android:name=".registration.PersonalDetailActvity" />
+        <activity
+            android:name=".chooser.ChooseAddressDialog"
+            android:theme="@style/DialogTheme" />
+        <activity android:name=".registration.CarrierDetailActivity" />
+
     </application>
 
 </manifest>

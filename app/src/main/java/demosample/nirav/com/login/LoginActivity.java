@@ -20,6 +20,7 @@ import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ActivityComponent;
+import demosample.nirav.com.registration.PersonalDetailActvity;
 import demosample.nirav.com.utils.AppUtility;
 import demosample.nirav.com.utils.IntentParameter;
 import demosample.nirav.com.utils.OnTouchPasswordListener;
@@ -79,7 +80,7 @@ public class LoginActivity extends AbstractBaseActivity implements ILoginView {
 
     @OnClick(R.id.txt_register)
     public void clickRegister() {
-        startActivity(new Intent(LoginActivity.this, RegistrationActivity.class).putExtra
+        startActivity(new Intent(LoginActivity.this, PersonalDetailActvity.class).putExtra
                 (IntentParameter
                         .SELECTED_VALUE, isForResult));
         finish();

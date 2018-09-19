@@ -86,7 +86,6 @@ public final class AppUtility {
     public static final int COUNTRY_TAG = 1;
     public static final int STATE_TAG = 2;
     public static final int CITY_TAG = 3;
-    public static final int PINCODE_TAG = 4;
     public static final int AFTER_TEXTED_CHANGE_QUANTUM = 1;
     public static final int AFTER_TEXTED_CHANGE_QUANTUM_MILI = 150;
 
@@ -258,4 +257,6 @@ public final class AppUtility {
     public static boolean isValidName(String word) {
         return word.matches("[a-zA-Z.? ]*");
     }
+
+
 }

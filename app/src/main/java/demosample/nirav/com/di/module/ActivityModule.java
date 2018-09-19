@@ -23,6 +23,9 @@ import com.google.gson.Gson;
 
 import dagger.Module;
 import dagger.Provides;
+import demosample.nirav.com.chooser.AddressPresenter;
+import demosample.nirav.com.chooser.IAddressPresenter;
+import demosample.nirav.com.chooser.IAddressView;
 import demosample.nirav.com.di.ActivityContext;
 import demosample.nirav.com.login.ILoginPresenter;
 import demosample.nirav.com.login.ILoginView;
@@ -71,5 +74,8 @@ public class ActivityModule {
             LoginPresenter<ILoginView> presenter) {
         return presenter;
     }
-
+    @Provides
+    IAddressPresenter<IAddressView> provideAddressPresenter(AddressPresenter<IAddressView> presenter) {
+        return presenter;
+    }
 }

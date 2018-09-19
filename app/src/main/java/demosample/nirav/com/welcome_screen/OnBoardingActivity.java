@@ -17,12 +17,14 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.OnClick;
 import demosample.nirav.com.R;
-import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ActivityComponent;
 import demosample.nirav.com.login.LoginActivity;
 import demosample.nirav.com.login.LoginInfoDto;
+import demosample.nirav.com.registration.RegistrationDTO;
+
+import static demosample.nirav.com.registration.PersonalDetailActvity.registrationDTO;
 
 
 public class OnBoardingActivity extends AbstractBaseActivity  {
@@ -54,14 +56,15 @@ public class OnBoardingActivity extends AbstractBaseActivity  {
         if (component != null) {
             component.inject(this);
         }
-
+        registrationDTO=new RegistrationDTO();
+        showWelcomeScreens();
         boolean mIsFirstTimeLoad = dataManager.checkForWelcomeScreen();
-        if (mIsFirstTimeLoad) {
+        /*if (mIsFirstTimeLoad) {
             showWelcomeScreens();
         } else {
             startActivity(new Intent(this, MainActivity.class));
             finish();
-        }
+        }*/
     }
 
 

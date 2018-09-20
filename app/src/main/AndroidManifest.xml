@@ -35,6 +35,7 @@
             android:name=".chooser.ChooseAddressDialog"
             android:theme="@style/DialogTheme" />
         <activity android:name=".registration.CarrierDetailActivity" />
+        <activity android:name=".registration.LogindetailformActivity" />
 
     </application>
 

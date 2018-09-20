@@ -113,32 +113,14 @@ public class PersonalDetailActvity extends AbstractBaseActivity {
     }
 
     void validateForm() {
-        if (registrationDTO.getGender() > 0) {
-        //    if (registrationDTO.getHeight() > 0) {
-                if (isNotEmptyString(registrationDTO.getDob())) {
-                    if (registrationDTO.getCountryId() > 0) {
-                        if (registrationDTO.getStateId() > 0) {
-                            if (registrationDTO.getCityId() > 0) {
+        if (registrationDTO.getGender() > 0)
+        //    if (registrationDTO.getHeight() > 0)
+                if (isNotEmptyString(registrationDTO.getDob()))
+                    if (registrationDTO.getCountryId() > 0)
+                        if (registrationDTO.getStateId() > 0)
+                            if (registrationDTO.getCityId() > 0)
                                 enableNextButton(true);
-                            } else {
-                                enableNextButton(false);
-                            }
 
-                        } else {
-                            enableNextButton(false);
-                        }
-                    } else {
-                        enableNextButton(false);
-                    }
-                } else {
-                    enableNextButton(false);
-                }
-            } else {
-                enableNextButton(false);
-            }
-        /*} else {
-            enableNextButton(false);
-        }*/
     }
 
     private void enableNextButton(boolean b) {

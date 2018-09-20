@@ -99,11 +99,17 @@ public class OtpActivity extends AbstractBaseActivity implements ILoginView {
     @OnClick(R.id.btn_send)
     public void btnVerifyClicked() {
         if (pinView.getText().length() == 6) {
-            LoginInfoDto dto = new LoginInfoDto();
+            /*LoginInfoDto dto = new LoginInfoDto();
             dto.setEmail(lblEmail.getText().toString());
             dto.setOTP(pinView.getText().toString());
             showProgressDialog("", "Loading...");
-            mPresenter.doOTPVerification(dto);
+            mPresenter.doOTPVerification(dto);*/
+
+            LoginInfoDto dto = new LoginInfoDto();
+            dto.setmUserName("oliver@arrow.com");
+            dto.setmPassword("oliver");
+            showProgressDialog(getString(R.string.pleasewait), getString(R.string.loading));
+            mPresenter.doLogin(dto);
         }
     }
 
@@ -157,7 +163,7 @@ public class OtpActivity extends AbstractBaseActivity implements ILoginView {
 
     @Override
     public void otpVerificationSucess() {
-        if (AppUtility.isNotEmptyString(mPassword)) {
+        /*if (AppUtility.isNotEmptyString(mPassword)) {
             LoginInfoDto dto = new LoginInfoDto();
             dto.setmUserName(lblEmail.getText().toString());
             dto.setmPassword(mPassword);
@@ -169,7 +175,9 @@ public class OtpActivity extends AbstractBaseActivity implements ILoginView {
             intent.putExtra(IntentParameter.OTP, pinView.getText().toString());
             startActivity(intent);
             finish();
-        }
+        }*/
+
+
     }
 
     @Override

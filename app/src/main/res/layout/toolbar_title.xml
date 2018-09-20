@@ -9,7 +9,7 @@ android:baselineAligned="false">
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/txt_title"
-        style="@style/Toolbar.Header"
+        style="@style/TextStyle.HeadersLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -17,6 +17,7 @@ android:baselineAligned="false">
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/app_name"
+        android:textColor="@color/white"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

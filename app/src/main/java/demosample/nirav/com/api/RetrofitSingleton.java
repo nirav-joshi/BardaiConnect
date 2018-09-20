@@ -111,9 +111,9 @@ public final class RetrofitSingleton {
 
 
                     });
-            if (BuildConfig.DEBUG) {
+            /*if (BuildConfig.DEBUG) {
                 builder.addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY));
-            }
+            }*/
             return builder;
         } catch (Exception e) {
             throw new RuntimeException(e);

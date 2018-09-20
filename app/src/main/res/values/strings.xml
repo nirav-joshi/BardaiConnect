@@ -33,7 +33,8 @@
     <string name="password_length_validation_message">Your password must be at least six characters long!</string>
     <string name="parentemailrequired">Parent Email Required!</string>
     <string name="dobrequired">Birthdate Required!</string>
-    <string name="valid_email_required">Valid Email is required!</string>
+    <string name="valid_email_required">Email is not valid!</string>
+    <string name="email_required">Email is required!</string>
     <string name="last_name_required">Last Name is required!</string>
     <string name="first_name_required">First Name is required!</string>
     <string name="we_have_sent_an_email_with_a_otp_code_to_your_registered_email_for_verification">We have sent an Email with an OTP code to your registered Email for Verification</string>
@@ -70,7 +71,12 @@
     <string name="selectState">Select State</string>
     <string name="selectCity">Select City</string>
 
+
+    <string name="invalidphone">Invalid Phone Number!</string>
+    <string name="name_validation_message">Special Characters are not allowed in this Field!</string>
+
     <string name="personaldetail">Personal Details</string>
     <string name="careerdetail">Career Details</string>
+    <string name="logindetail">Login Details</string>
     <string name="quation">You won\'t be allowed to edit the following fields after registration.\nPlease edit NOW in case you want to make any changes to:</string>
 </resources>

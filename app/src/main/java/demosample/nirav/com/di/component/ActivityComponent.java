@@ -17,6 +17,7 @@ package demosample.nirav.com.di.component;
 
 
 import dagger.Component;
+import demosample.nirav.com.bardaiconnect.HomeFragment;
 import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.chooser.ChooseAddressDialog;
 import demosample.nirav.com.di.PerActivity;
@@ -38,6 +39,7 @@ public interface ActivityComponent {
 
 
     void inject(MainActivity mainActivity);
+    void inject(HomeFragment mainActivity);
     void inject(ForgotPasswordActivity mainActivity);
     void inject(ChooseAddressDialog mainActivity);
     void inject(ResetPasswordActivity mainActivity);

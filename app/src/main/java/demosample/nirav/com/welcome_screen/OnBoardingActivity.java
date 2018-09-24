@@ -17,6 +17,7 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.OnClick;
 import demosample.nirav.com.R;
+import demosample.nirav.com.bardaiconnect.MainActivity;
 import demosample.nirav.com.base.AbstractBaseActivity;
 import demosample.nirav.com.data.DataManager;
 import demosample.nirav.com.di.component.ActivityComponent;
@@ -57,7 +58,8 @@ public class OnBoardingActivity extends AbstractBaseActivity  {
             component.inject(this);
         }
         registrationDTO=new RegistrationDTO();
-        showWelcomeScreens();
+        startActivity(new Intent(this, MainActivity.class));
+
         boolean mIsFirstTimeLoad = dataManager.checkForWelcomeScreen();
         /*if (mIsFirstTimeLoad) {
             showWelcomeScreens();

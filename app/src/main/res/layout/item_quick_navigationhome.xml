@@ -20,6 +20,7 @@
             android:id="@+id/img_icon"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -34,7 +35,7 @@
         <TextView
             android:id="@+id/tv_name"
             style="@style/TextAppearance.Text.Bold"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:gravity="center"
